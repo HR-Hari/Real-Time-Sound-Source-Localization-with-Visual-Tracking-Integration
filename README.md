@@ -15,7 +15,7 @@ The system combines:
 
 This audio–visual framework is suitable for **assistive technologies, robotics, surveillance, and research applications**.
 
-## ⚙️ System Functionality & Working
+## System Functionality & Working
 
 The system operates in real time using a synchronized **multi-microphone array** and a camera module. Audio signals captured by spatially separated microphones are processed frame-by-frame to estimate **inter-microphone time delays**. These delays are used to compute the **Angle of Arrival (AoA)** and subsequently infer the **2D spatial location (x, y)** of the sound source using array geometry.
 
