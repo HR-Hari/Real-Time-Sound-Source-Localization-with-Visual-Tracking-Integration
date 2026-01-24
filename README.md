@@ -2,7 +2,7 @@
 
 A **real-time audio–visual perception system** that localizes and tracks active sound sources by fusing **microphone-array–based signal processing** with **camera-based directional visual tracking**. The system estimates the **2D spatial location (x, y)** of sound sources using audio signals, while visual information is used **only to identify and track the direction of the sound-emitting object**, improving robustness and temporal stability in dynamic environments.
 
-## 📌 Project Overview
+## Project Overview
 
 Sound source localization using microphones alone is highly sensitive to noise, reverberation, and spatial ambiguity. This project addresses these limitations by combining **Digital Signal Processing (DSP)–based audio localization** with **vision-based directional tracking**.
 
