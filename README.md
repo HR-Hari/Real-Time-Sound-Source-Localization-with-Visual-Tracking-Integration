@@ -1,4 +1,4 @@
-# 🎧 Real-Time Sound Source Localization with Visual Tracking Integration
+# Real-Time Sound Source Localization with Visual Tracking Integration
 
 A **real-time audio–visual perception system** that localizes and tracks active sound sources by fusing **microphone-array–based signal processing** with **camera-based directional visual tracking**. The system estimates the **2D spatial location (x, y)** of sound sources using audio signals, while visual information is used **only to identify and track the direction of the sound-emitting object**, improving robustness and temporal stability in dynamic environments.
 
@@ -23,7 +23,7 @@ To improve robustness, the audio pipeline incorporates **FIR-based filtering and
 
 The **fusion layer aligns the audio-derived direction and (x, y) position with the vision-based direction**, enabling stable tracking even when one modality is temporarily degraded. Vision is not used for metric distance estimation, but strictly for **directional confirmation and temporal association**.
 
-## 🎯 Objectives
+## Objectives
 
 - Localize sound sources in real time in **2D (x, y) space** using microphone arrays  
 - Implement robust DSP algorithms for delay estimation and noise suppression  
@@ -31,7 +31,7 @@ The **fusion layer aligns the audio-derived direction and (x, y) position with t
 - Use vision-based tracking to identify the **direction** of the sound source  
 - Develop a scalable architecture suitable for research extensions  
 
-## 🧠 System Architecture
+## System Architecture
 
     ┌──────────────────────────────┐
     │      Microphone Array        │
@@ -51,7 +51,7 @@ The **fusion layer aligns the audio-derived direction and (x, y) position with t
     │     Visual Tracking (Camera) │
     │     Temporal Source Tracking │
     └──────────────────────────────┘
-## 🔧 Implemented DSP Algorithms
+## Implemented DSP Algorithms
 
 - FIR-based noise suppression  
 - Spectral conditioning for robust delay estimation  
@@ -59,14 +59,14 @@ The **fusion layer aligns the audio-derived direction and (x, y) position with t
 - Energy-based activity detection  
 - Temporal smoothing for stable localization  
 
-## 📍 Sound Source Localization Methods
+## Sound Source Localization Methods
 
 - Time Difference of Arrival (TDoA) estimation using GCC-PHAT  
 - Angle of Arrival (AoA) computation using array geometry  
 - Geometry-based spatial localization  
 - Audio–visual assisted source tracking  
 
-## ⚙️ Hardware & Platforms
+## Hardware & Platforms
 
 | Component | Description |
 |---------|------------|
@@ -75,7 +75,7 @@ The **fusion layer aligns the audio-derived direction and (x, y) position with t
 | Camera Module | Visual tracking and scene analysis |
 | Host System | PC for processing, visualization, and analysis |
 
-## 💻 Software & Technologies
+## Software & Technologies
 
 - **Languages**: C / C++, Python, MATLAB  
 - **Embedded Development**: ESP-IDF / Arduino  
@@ -84,16 +84,16 @@ The **fusion layer aligns the audio-derived direction and (x, y) position with t
 - **Communication**: Serial
 - **Visualization**: Python-based plotting tools  
 
-## 🚀 Key Features
+## Key Features
 
-- 🎙️ Real-time multi-microphone audio acquisition  
-- 📐 TDoA- and AoA-based sound localization  
-- 🎚️ DSP-based noise robustness  
-- 👁️ Visual tracking–assisted localization  
-- 🔄 Temporal smoothing and stable tracking  
-- 🧩 Modular, research-ready architecture  
+- Real-time multi-microphone audio acquisition  
+- TDoA- and AoA-based sound localization  
+- DSP-based noise robustness  
+- Visual tracking–assisted localization  
+- Temporal smoothing and stable tracking  
+- Modular, research-ready architecture  
 
-## 🧪 Testing & Validation
+## Testing & Validation
 
 - TDoA estimation accuracy under varying SNR  
 - AoA estimation error analysis  
@@ -101,7 +101,7 @@ The **fusion layer aligns the audio-derived direction and (x, y) position with t
 - Temporal stability and tracking consistency  
 - Real-time performance evaluation  
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 - Multi-source sound localization  
 - Kalman / Particle filter–based tracking  
